@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #e8eaef;
+  --color-foreground: #18181b;
+  --color-muted: #64666e;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  /* Neumorphic shadow stack: jangan diganti dengan satu shadow saja. */
+  --card-shadow:
+    6px 6px 14px #c3c6ce,
+    -6px -6px 14px #ffffff,
+    inset 1px 1px 0 #ffffff;
+}
+
+body {
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+.neu {
+  box-shadow: var(--card-shadow);
+}
+
+.accent-text {
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
